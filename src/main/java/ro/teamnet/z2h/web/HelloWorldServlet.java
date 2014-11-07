@@ -23,7 +23,7 @@ import java.io.IOException;
 public class HelloWorldServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.setContentType("text/html");
+                resp.setContentType("text/html");
         resp.getWriter().write("Hello <b>"+req.getParameter("user")+"</b>");
     }
 
@@ -31,4 +31,6 @@ public class HelloWorldServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         doGet(req, resp);
     }
+
+
 }
