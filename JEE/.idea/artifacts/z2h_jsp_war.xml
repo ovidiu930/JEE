@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="z2h-jsp:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="web-container.war">
+      <element id="artifact" artifact-name="z2h-jsp:war exploded" />
+    </root>
+  </artifact>
+</component>
