@@ -1,21 +1,5 @@
-/**
- * ZeroToHeroServlet.java
- *
- * Copyright (c) 2014 Teamnet. All Rights Reserved.
- *
- * This source file may not be copied, modified or redistributed,
- * in whole or in part, in any form or for any reason, without the express
- * written consent of Teamnet.
- **/
+package ro.teamnet.z2h.test;
 
-package ro.teamnet.z2h.web;
-
-import org.apache.tomcat.util.buf.Base64;
-
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Enumeration;
@@ -26,17 +10,11 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.tomcat.util.buf.Base64;
 
-public class ZeroToHeroServlet extends HttpServlet {
+public class TestServlet extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // resp.setContentType("text/html");
-        //resp.getWriter().write("Hello <b>"+req.getParameter("user")+"</b>");
-        // RequestDispatcher requestDispatcher =req.getRequestDispatcher("/helloforward");
 
-        // req.setAttribute("testAttribute", "Enjoy Z2H");
-
-        // requestDispatcher.forward(req, resp);
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
         out.println("This is the Test Servlet");
@@ -59,8 +37,4 @@ public class ZeroToHeroServlet extends HttpServlet {
         out.println("</em>");
     }
 
-    @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        doGet(req, resp);
-    }
 }

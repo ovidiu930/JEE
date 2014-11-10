@@ -13,8 +13,10 @@
     </form>
      <form name="hello" method="get" action="hello">
       <label for="firstName">User:</label>
-             <input type="text" id="firstName" name="user"/>
-             <input type="submit" id="submitButton"/>
+         <input type="text" id="user" name="user"/>
+         <input type="text" id="parola" name="parola"/>
+
+             <input type="submit" id="submitButto"/>
              </form>
 </div>
 </body>
